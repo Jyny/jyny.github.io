@@ -15,7 +15,7 @@
 			font-family: Helvetica;
 		}
 		body p {
-			font-size: 20px;
+			font-size: 90%;
 		}
 		@media screen and (min-width: 768px) {
 			nav {
@@ -69,6 +69,19 @@
 		.ip {
 			list-style-type: none;
 		}
+		blockquote {
+			font-size: 120%;
+			margin: 1.5em 10px;
+			padding: 0.5em 10px;
+			quotes: "\201C""\201D""\2018""\2019";
+		}
+		blockquote:before {
+			content: open-quote;
+			font-size: 4em;
+			line-height: 0.1em;
+			margin-right: 0.25em;
+			vertical-align: -0.4em;
+		}
 		</style>
 	</head>
 	
@@ -87,8 +100,10 @@
 		</div>
 
 		<div class="content">
-			<p>#Developer #Remix</p>
-			<p>#SecurityResearcher #Geek</p>
+			<p>A.K.A @jynychen</p>
+			<blockquote>技術坑裡的蟲師<br />為了找到與蟲共生的方法，從此踏上了蟲師之路，喜歡打滾於技術的大坑中。</blockquote>
+			<p>#Developer #SecurityResearcher</p>
+			<p>#Geek #Science #Music</p>
 		</div>
 
 		<div class="ip">
