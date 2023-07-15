@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="shortcut icon" href="https://blog.jyny.dev/img/favicon-96x96.png">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="author" content="jyny">
 		<meta name="google-site-verification" content="IdlvbNWltExYRw6mw2WxSh_P4UGcSMECWH9pv_fPN8c" />
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147974681-1"></script>
@@ -14,108 +12,39 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-147974681-1');
 		</script>
-
-		<title>JYNY</title></title>
+		<script src="https://cdn.tailwindcss.com"></script>
 		<style>
-		body {
-			margin: auto auto;
-			color: white;
-			text-align: center;
-			background-color: #333;
-			font-family: Helvetica;
-		}
-		body p {
-			font-size: 90%;
-		}
-		@media screen and (min-width: 768px) {
-			nav {
-				width: 60%;
-				height: 30px;
-				margin: 40px auto 0;
-			}
-			nav h1{
-				float: left;
-				font-size: 30px;
-				margin: 0 auto;
-			}
-			nav ul{
-				float: right;
-				font-size: 20px;
-				margin: 10px auto 0;
-				padding: 0 0 0 0;
-			}
-		}
-		@media screen and (max-width: 768px) {
-			nav {
-				margin: 20px auto;
-			}
-			nav h1{
-				font-size: 30px;
-				margin: auto auto;
-			}
-			nav ul{
-				font-size: 20px;
-				padding: 0 0 0 0;
-			}
-		}
-		nav li{
-			display: inline;
-			margin-left: 10px;
-			margin-right: 10px;
-		}
-		nav a {
-			color: #DCDCDC;
-			text-decoration: none;
-		}
-		nav a:hover {
-			text-decoration: underline;
-		}
-		.gravatar {
-			margin-top: 6%;
-		}
-		.content {
-			margin: 0 auto;
-		}
-		.ip {
-			list-style-type: none;
-		}
 		blockquote {
-			font-size: 120%;
-			margin: 1.5em 10px;
-			padding: 0.5em 10px;
-			quotes: "\201C""\201D";
+			quotes: "\201C" "\201D";
 		}
 		blockquote:before {
 			content: open-quote;
 			font-size: 4em;
 			line-height: 0.1em;
-			margin-right: 0.1em;
 			vertical-align: -0.4em;
 		}
 		</style>
+		<title>JYNY</title>
 	</head>
-	
-	<body>
-		<nav>
-			<h1>JYNY 傑尼</h1>
-			<ul>
-				<li><a href="https://blog.jyny.dev">{Blog}</a></li>
-				<li><a href="https://github.com/Jyny/jyny">{About}</a></li>
+	<body class="bg-neutral-700 text-white font-sans text-center">
+		<nav class="mx-auto w-3/5 my-10 flex flex-wrap">
+			<h1 class="mx-auto text-3xl">JYNY 傑尼</h1>
+			<ul class="mx-auto flex items-end space-x-5 text-xl">
+				<li><a href="https://blog.jyny.dev" class="hover:underline text-gray-300">{Blog}</a></li>
+				<li><a href="https://github.com/Jyny/jyny" class="hover:underline text-gray-300">{About}</a></li>
 			</ul>
 		</nav>
-
-		<div class="gravatar">
-			<img style="border-radius: 100%;" src="https://en.gravatar.com/userimage/76569655/6132fc242cf7ef01fc4a4174701340dc?size=200">
+		<div class="mx-auto my-12">
+			<img class="mx-auto rounded-full" src="https://en.gravatar.com/userimage/76569655/6132fc242cf7ef01fc4a4174701340dc?size=200">
+			<p class="mt-4 text-sm">Jerry Y. Chen (@jyny)</p>
 		</div>
-
-		<div class="content">
-			<p>Jerry Y. Chen (@jyny)</p>
-			<blockquote>專門不務正業工程師，自稱技術坑裡的蟲師<br />為了找到與蟲共生的方法，從此踏上了蟲師之路，喜歡打滾於技術的大坑中</blockquote>
+		<div class="mx-2 my-8">
+			<blockquote class="text-base">專門不務正業工程師，自稱技術坑裡的蟲師</blockquote>
+			<p class="text-base">為了找到與蟲共生的方法，從此踏上了蟲師之路，喜歡打滾於技術的大坑中</p>
+		</div>
+		<div class="mx-auto my-4 text-sm">
 			<p>#Developer #Engineer #Geek</p>
 			<p>#CyberSecurity #Science #Music</p>
 		</div>
-
-		<script>
-		</script>
 	</body>
 </html>
