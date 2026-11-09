@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,39 +12,28 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-147974681-1');
 		</script>
-		<script src="https://cdn.tailwindcss.com"></script>
-		<style>
-		blockquote {
-			quotes: "\201C" "\201D";
-		}
-		blockquote:before {
-			content: open-quote;
-			font-size: 4em;
-			line-height: 0.1em;
-			vertical-align: -0.4em;
-		}
-		</style>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
 		<title>JYNY</title>
 	</head>
-	<body class="bg-neutral-700 text-white font-sans text-center">
-		<nav class="mx-auto w-3/5 my-10 flex flex-wrap">
-			<h1 class="mx-auto text-3xl">JYNY 傑尼</h1>
-			<ul class="mx-auto flex items-end space-x-5 text-xl">
-				<li><a href="https://blog.jyny.dev" class="hover:underline text-gray-300">{Blog}</a></li>
-				<li><a href="https://github.com/Jyny/jyny" class="hover:underline text-gray-300">{About}</a></li>
+	<body class="min-h-dvh bg-neutral-700 px-4 py-10 text-center text-white">
+		<nav class="mx-auto flex max-w-3xl flex-wrap items-end justify-center gap-x-10 gap-y-4">
+			<h1 class="text-3xl">JYNY 傑尼</h1>
+			<ul class="flex gap-5 text-xl text-gray-300">
+				<li><a href="https://blog.jyny.dev" class="hover:underline">{Blog}</a></li>
+				<li><a href="https://github.com/Jyny/jyny" class="hover:underline">{About}</a></li>
 			</ul>
 		</nav>
-		<div class="mx-auto my-12">
-			<img class="mx-auto rounded-full" src="https://en.gravatar.com/userimage/76569655/6132fc242cf7ef01fc4a4174701340dc?size=200">
+		<header class="my-12">
+			<img class="mx-auto size-[200px] rounded-full" src="https://en.gravatar.com/userimage/76569655/6132fc242cf7ef01fc4a4174701340dc?size=200" alt="Jerry Y. Chen">
 			<p class="mt-4 text-sm">Jerry Y. Chen (@jyny)</p>
-		</div>
-		<div class="mx-2 my-8">
-			<blockquote class="text-base">專門不務正業工程師，自稱技術坑裡的蟲師</blockquote>
-			<p class="text-base">為了找到與蟲共生的方法，從此踏上了蟲師之路，喜歡打滾於技術的大坑中</p>
-		</div>
-		<div class="mx-auto my-4 text-sm">
-			<p>#Developer #Engineer #Geek</p>
-			<p>#CyberSecurity #Science #Music</p>
-		</div>
+		</header>
+		<main class="my-8 space-y-1">
+			<blockquote class="before:mr-1 before:align-[-0.4em] before:text-[4em] before:leading-[0.1em] before:content-['“']">專門不務正業工程師，自稱技術坑裡的蟲師</blockquote>
+			<p>為了找到與蟲共生的方法，從此踏上了蟲師之路，喜歡打滾於技術的大坑中</p>
+		</main>
+		<footer class="text-sm">
+			<p>#Engineer #Tinkerer #Explo{re|it}</p>
+			<p>#Developer #Science #CyberSecurity</p>
+		</footer>
 	</body>
 </html>
